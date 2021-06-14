@@ -16,16 +16,25 @@ document.addEventListener('scroll', () => {
     }
 });
 
+
+
 //navbar__menu 클릭 시 선택한 메뉴로 스무스하게 스크롤링
 
-const nabarMenu = document.querySelector('.navbar__menu');
-nabarMenu.addEventListener('click', (event) => {
+const navbarMenu = document.querySelector('.navbar__menu');
+navbarMenu.addEventListener('click', (event) => {
     const target = event.target;
     const link = target.dataset.link;
     if (link == null) {
         return;
     }
+    navbarMenu.classList.remove('open');
     scrollIntoView(link);
+});
+
+//줄인 화면에서 Navbar toggle button 클릭시 메뉴 보이기
+const navbarToggleBtn = document.querySelector('.navbar__toggle-btn');
+navbarToggleBtn.addEventListener('click', () => {
+    navbarMenu.classList.toggle('open');
 });
 
 //Home 내 "Contact Me" 클릭 시 선택한 메뉴로 스무스하게 스크롤링
