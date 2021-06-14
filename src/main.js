@@ -16,7 +16,7 @@ document.addEventListener('scroll', () => {
     }
 });
 
-//navbar__menu 선택시 선택한 곳으로 스크롤링
+//navbar__menu 클릭 시 선택한 메뉴로 스무스하게 스크롤링
 
 const nabarMenu = document.querySelector('.navbar__menu');
 nabarMenu.addEventListener('click', (event) => {
@@ -26,8 +26,18 @@ nabarMenu.addEventListener('click', (event) => {
         return;
     }
 
-    console.log(event.target.dataset.link)
-    const scrollTo = document.querySelector(link);
-    scrollTo.scrollIntoView({ behavior: 'smooth' });
+    scrollIntoView(link);
 
 });
+
+//Home 내 "Contact Me" 클릭 시 선택한 메뉴로 스무스하게 스크롤링
+
+const homeContactBtn = document.querySelector('.home__contact');
+homeContactBtn.addEventListener('click', (event) => {
+    scrollIntoView('#contact');
+});
+
+function scrollIntoView(selector) {
+    const scrollTo = document.querySelector(selector);
+    scrollTo.scrollIntoView({ behavior: 'smooth' });
+}
