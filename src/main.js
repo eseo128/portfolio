@@ -42,6 +42,21 @@ document.addEventListener('scroll', () => {
     home.style.opacity = 1 - window.scrollY / homeHeight;
 });
 
+//"arrow up" 버튼 스크롤링 내릴 시 show
+const arrowUp = document.querySelector('.arrow-up');
+document.addEventListener('scroll', () => {
+    if (window.scrollY > homeHeight / 2) {
+        arrowUp.classList.add('visible');
+    } else {
+        arrowUp.classList.remove('visible');
+    }
+});
+
+//"arrow up" 버튼 클릭 시 맨 위로
+arrowUp.addEventListener('click', () => {
+    scrollIntoView('#home');
+})
+
 
 // 유틸리티 함수: 스크롤링 펑션으로 간단하게 주기
 function scrollIntoView(selector) {
