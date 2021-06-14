@@ -25,9 +25,7 @@ nabarMenu.addEventListener('click', (event) => {
     if (link == null) {
         return;
     }
-
     scrollIntoView(link);
-
 });
 
 //Home 내 "Contact Me" 클릭 시 선택한 메뉴로 스무스하게 스크롤링
@@ -37,6 +35,15 @@ homeContactBtn.addEventListener('click', (event) => {
     scrollIntoView('#contact');
 });
 
+//윈도우 스크롤이 내려갈 수록 점점 투명하게 만들기
+const home = document.querySelector('.home__container');
+const homeHeight = home.getBoundingClientRect().height;
+document.addEventListener('scroll', () => {
+    home.style.opacity = 1 - window.scrollY / homeHeight;
+});
+
+
+// 유틸리티 함수: 스크롤링 펑션으로 간단하게 주기
 function scrollIntoView(selector) {
     const scrollTo = document.querySelector(selector);
     scrollTo.scrollIntoView({ behavior: 'smooth' });
