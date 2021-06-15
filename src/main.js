@@ -161,3 +161,58 @@ window.addEventListener('wheel', () => {
     }
     selectNavItem(navItems[selectedNavIndex]);
 });
+
+// home text about me photo text move
+const textImgItems = [
+  ".text-typing",
+  ".text_left",
+  ".text_right",
+  ".about__info__left img",
+  ".about__info__profile",
+  ".about__info__history",
+];
+const textImgLists = textImgItems.map((id) => document.querySelector(id));
+
+const textImgOption = {
+  root: null,
+  rootMargin: "0px",
+  threshold: 0,
+};
+const textImgCallback = (entries, observer) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("move");
+    } else {
+      entry.target.classList.remove("move");
+    }
+  });
+};
+const textImgObserver = new IntersectionObserver(
+  textImgCallback,
+  textImgOption
+);
+
+//textImgLists.forEach((textImgList) => textImgObserver.observe(textImgList));
+
+
+// skill
+
+const skills = document.querySelectorAll(".skill__value");
+const skillOption = {
+  root: null,
+  rootMargin: "0px",
+  threshold: 0,
+};
+const skillCallback = (entries, observer) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("move");
+    } else {
+      entry.target.classList.remove("move");
+    }
+  });
+};
+
+const skillObserver = new IntersectionObserver(skillCallback, skillOption);
+skills.forEach((skill) => skillObserver.observe(skill));
+
