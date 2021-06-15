@@ -43,7 +43,7 @@
 
 body {
   margin: 0;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Noto Sans KR", sans-serif;
   cursor: default;
 }
 
@@ -233,12 +233,12 @@ p {
 }
 
 .job {
-  display: flex;
   align-items: center;
+  margin-bottom: 16px;
 }
 
 .job__description {
-  margin: 0 16px;
+  margin: 0 50px;
   text-align: left;
 }
 
@@ -266,14 +266,15 @@ p {
 }
 
 .skillset {
-  display: flex;
   background-color: var(--color-light-grey);
   color: var(--color-light-white);
-  margin: 20px 0;
+  margin: 50px 0;
+  display: flex;
 }
 
 .skillset__title {
   color: var(--color-white);
+  font-weight: 600;
 }
 
 .skillset__left {
@@ -314,6 +315,8 @@ p {
 .tools,
 .etc {
   padding: 20px;
+  line-height: 40px;
+}
 }
 
 /* Work */
