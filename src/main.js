@@ -50,20 +50,21 @@ document.addEventListener('scroll', () => {
     home.style.opacity = 1 - window.scrollY / homeHeight;
 });
 
-//"arrow up" 버튼 스크롤링 내릴 시 show
-const arrowUp = document.querySelector('.arrow-up');
-document.addEventListener('scroll', () => {
-    if (window.scrollY > homeHeight / 2) {
-        arrowUp.classList.add('visible');
-    } else {
-        arrowUp.classList.remove('visible');
-    }
+//"backBtn" 버튼 스크롤링 내릴 시 show
+const backBtn = document.querySelector(".backBtn");
+backBtn.addEventListener("click", () => {
+  scrollIntoView("#home");
 });
+document.addEventListener("scroll", () => {
+  const homeHeight = home.getBoundingClientRect().height;
+  if (window.scrollY > homeHeight / 2) {
+    backBtn.classList.add("active");
+  } else {
+    backBtn.classList.remove("active");
+  }
 
-//"arrow up" 버튼 클릭 시 맨 위로
-arrowUp.addEventListener('click', () => {
-    scrollIntoView('#home');
-})
+  navbarMenu.classList.remove("open");
+});
 
 //Projects
 const workBtnContainer = document.querySelector('.work__categories');
