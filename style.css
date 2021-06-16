@@ -110,7 +110,7 @@ p {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background-color: var(--color-dark-purple);
+  background-color: #a8a3c782;
   font-size: 30px;
   color: white;
   opacity: 0;
@@ -205,9 +205,9 @@ p {
 
 .home__title {
   color: var(--color-white);
-   text-shadow: #8ea6c2 1px 1px, #8ea6c2 -0px 0px, #8ea6c2 -1px 1px,
-    #8ea6c2 -2px 2px, #8ea6c2 -3px 3px, #8ea6c2 -4px 4px, #8ea6c2 -5px 5px,
-    #8ea6c2 -6px 6px, #8ea6c2 -7px 7px, #8ea6c2 -8px 8px, #8ea6c2 -9px 9px;
+   text-shadow: #a8a3c782 1px 1px, #a8a3c782 -0px 0px, #a8a3c782 -1px 1px,
+   #a8a3c782 -2px 2px, #a8a3c782 -3px 3px, #a8a3c782 -4px 4px, #a8a3c782 -5px 5px,
+   #a8a3c782 -6px 6px, #a8a3c782 -7px 7px, #a8a3c782 -8px 8px, #a8a3c782 -9px 9px;
   animation-name: titleAnimation;
   animation-timing-function: ease-in;
   animation-duration: 3s;
