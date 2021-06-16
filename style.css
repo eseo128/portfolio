@@ -73,7 +73,7 @@ button {
 h1 {
   font-size: var(--font-large);
   font-weight: var(--weight-bold);
-  color: var(--color-black);
+  color: var(--color-pink);
   margin: 16px 0px;
   letter-spacing: 5px;
 }
@@ -110,7 +110,7 @@ p {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background-color: #a8a3c782;
+  background-color: #826fa9;
   font-size: 30px;
   color: white;
   opacity: 0;
@@ -131,7 +131,8 @@ p {
 }
 
 .backBtn:hover{
-  background-color: #8079b0;
+  background-color: #b4b6e9;
+  color: #826fa9;
 }
 
 
@@ -205,9 +206,9 @@ p {
 
 .home__title {
   color: var(--color-white);
-   text-shadow: #a8a3c782 1px 1px, #a8a3c782 -0px 0px, #a8a3c782 -1px 1px,
-   #a8a3c782 -2px 2px, #a8a3c782 -3px 3px, #a8a3c782 -4px 4px, #a8a3c782 -5px 5px,
-   #a8a3c782 -6px 6px, #a8a3c782 -7px 7px, #a8a3c782 -8px 8px, #a8a3c782 -9px 9px;
+   text-shadow: var(--color-pink) 1px 1px, var(--color-pink) -0px 0px, var(--color-pink) -1px 1px,
+   var(--color-pink) -2px 2px, var(--color-pink) -3px 3px, var(--color-pink) -4px 4px, var(--color-pink) -5px 5px,
+   var(--color-pink) -6px 6px, var(--color-pink) -7px 7px, var(--color-pink) -8px 8px, var(--color-pink) -9px 9px;
   animation-name: titleAnimation;
   animation-timing-function: ease-in;
   animation-duration: 3s;
@@ -405,7 +406,7 @@ p {
 
 /* Work */
 .work__categories {
-  margin: 40px;
+  margin: 25px 40px;
 }
 
 .category__btn {
@@ -452,7 +453,7 @@ p {
 }
 
 .work__categories{
-  margin: 0 50px;
+  margin:  50px;
 }
 .work__project.anim-out {
   opacity: 0;
