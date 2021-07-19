@@ -1,5 +1,5 @@
 # Eunseo's portfolio
-역량을 보여줄 수 있는 포트폴리오 사이트를 만든다
+나의 역량을 보여줄 수 있는 포트폴리오 사이트를 만든다
  
 # Tool Stack
 <p>
@@ -17,5 +17,10 @@
 - 배포 사이트 : https://eseo128.github.io/portfolio/
 
 # Site 소개
-> ![image](https://user-images.githubusercontent.com/34049770/126151630-09f0f5c3-f275-449e-85f9-8146bf67ea44.png)
+ Home, About, Skill, My work, contact 로 섹션을 나눈다
+![image](https://user-images.githubusercontent.com/34049770/126151858-55ca83f6-460d-4266-a9b6-3ab767d993ff.png)
+ ![image](https://user-images.githubusercontent.com/34049770/126152407-44b80259-11b5-461d-85d9-dc6c5dbe587b.png)
+![image](https://user-images.githubusercontent.com/34049770/126152481-e034b284-813f-43cc-a790-4d878d258485.png)
+
+
 
