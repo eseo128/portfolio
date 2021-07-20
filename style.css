@@ -130,11 +130,10 @@ p {
   pointer-events: auto;
 }
 
-.backBtn:hover{
+.backBtn:hover {
   background-color: #b4b6e9;
   color: #826fa9;
 }
-
 
 /* Navbar */
 #navbar {
@@ -206,9 +205,12 @@ p {
 
 .home__title {
   color: var(--color-white);
-   text-shadow: var(--color-pink) 1px 1px, var(--color-pink) -0px 0px, var(--color-pink) -1px 1px,
-   var(--color-pink) -2px 2px, var(--color-pink) -3px 3px, var(--color-pink) -4px 4px, var(--color-pink) -5px 5px,
-   var(--color-pink) -6px 6px, var(--color-pink) -7px 7px, var(--color-pink) -8px 8px, var(--color-pink) -9px 9px;
+  text-shadow: var(--color-pink) 1px 1px, var(--color-pink) -0px 0px,
+    var(--color-pink) -1px 1px, var(--color-pink) -2px 2px,
+    var(--color-pink) -3px 3px, var(--color-pink) -4px 4px,
+    var(--color-pink) -5px 5px, var(--color-pink) -6px 6px,
+    var(--color-pink) -7px 7px, var(--color-pink) -8px 8px,
+    var(--color-pink) -9px 9px;
   animation-name: titleAnimation;
   animation-timing-function: ease-in;
   animation-duration: 3s;
@@ -242,14 +244,12 @@ p {
   }
 }
 
-
 .home__minititle {
   color: var(--color-white);
- 
 }
 
 .text-typing.move {
-  animation:  2s steps(25), blink-caret 0.5s step-end infinite alternate;
+  animation: 2s steps(25), blink-caret 0.5s step-end infinite alternate;
 }
 
 .home__contact {
@@ -349,8 +349,9 @@ p {
 .skillset {
   background-color: var(--color-light-grey);
   color: var(--color-light-white);
-  margin: 50px 0;
+  margin: 50px auto;
   display: flex;
+  width: 85%;
 }
 
 .skillset__title {
@@ -359,7 +360,7 @@ p {
 }
 
 .skillset__left {
-  flex-basis: 60%;
+  flex-basis: 100%;
   background-color: var(--color-dark-grey);
   padding: 20px 40px;
 }
@@ -389,9 +390,9 @@ p {
   background-color: var(--color-orange);
 }
 
-.skillset__right {
+/* .skillset__right {
   flex-basis: 40%;
-}
+} 
 
 .tools {
   background-color: var(--color-grey);
@@ -402,7 +403,7 @@ p {
   padding: 20px;
   line-height: 40px;
 }
-}
+}*/
 
 /* Work */
 .work__categories {
@@ -452,8 +453,8 @@ p {
   transition: all var(--animation-duration) ease-out;
 }
 
-.work__categories{
-  margin:  50px;
+.work__categories {
+  margin: 50px;
 }
 .work__project.anim-out {
   opacity: 0;
@@ -586,8 +587,6 @@ p {
   transition: all var(--animation-duration) ease-in;
 }
 
-
-
 /* For below 768px screen width */
 @media screen and (max-width: 768px) {
   :root {
@@ -626,7 +625,7 @@ p {
     display: block;
   }
 
-  .navbar__logo{
+  .navbar__logo {
     display: ;
   }
 
@@ -686,7 +685,7 @@ p {
     font-size: 30px;
   }
 
-  .arrow-up:hover{
+  .arrow-up:hover {
     background-color: var(--color-pink);
   }
 }
