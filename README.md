@@ -19,7 +19,7 @@
 # Site 소개
 - Home, About, Skill, My work, contact 로 섹션을 나누어 작업한다
  
-![image](https://user-images.githubusercontent.com/34049770/126151858-55ca83f6-460d-4266-a9b6-3ab767d993ff.png)
+![image](https://user-images.githubusercontent.com/34049770/126466492-c3316b8c-1c92-464d-a2b8-3fa7213a2a24.png)
  ![image](https://user-images.githubusercontent.com/34049770/126152407-44b80259-11b5-461d-85d9-dc6c5dbe587b.png)
 ![image](https://user-images.githubusercontent.com/34049770/126152481-e034b284-813f-43cc-a790-4d878d258485.png)
 
