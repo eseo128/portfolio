@@ -1,5 +1,6 @@
 # Eunseo's portfolio
 나의 역량을 보여줄 수 있는 포트폴리오 사이트를 만든다
+- 배포 사이트 : https://eseo128.github.io/portfolio/
  
 # Tool Stack
 <p>
@@ -14,7 +15,6 @@
 - 상단의 메뉴 클릭으로 스크롤 이동
 - 스크롤 시 button의 이동
 - backBtn을 통한 홈으로 이동
-- 배포 사이트 : https://eseo128.github.io/portfolio/
 
 # Site 소개
 - Home, About, Skill, My work, contact 로 섹션을 나누어 작업한다
