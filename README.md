@@ -9,7 +9,7 @@
     <img src="https://img.shields.io/badge/CSS-1572B6?style=flat&logo=CSS3&logoColor=white"/>&nbsp;&nbsp;
 
 # Home page
-- 반응형 레이아웃 (부트스트랩 가능)
+- 반응형 레이아웃
 - 웹 접근성
 - 브라우저 호환성 관리
 - 상단의 메뉴 클릭으로 스크롤 이동
